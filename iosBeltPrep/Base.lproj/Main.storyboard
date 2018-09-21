@@ -82,6 +82,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="tableView" destination="eiV-h7-a2u" id="Bhj-GV-gfR"/>
                         <segue destination="Nz5-SD-GST" kind="presentation" identifier="AddEditSegue" id="V1g-TA-uYf"/>
                         <segue destination="nKd-Tt-9Q0" kind="presentation" identifier="ViewSegue" id="bVx-vr-pFS"/>
                     </connections>
@@ -125,50 +126,34 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="uCl-qh-ThA">
-                                <rect key="frame" x="32" y="451.5" width="311" height="32"/>
-                                <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="       /       /    " borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jM9-5C-bCk">
-                                        <rect key="frame" x="0.0" y="0.0" width="255" height="32"/>
-                                        <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5HN-g3-sHW">
-                                        <rect key="frame" x="279" y="0.0" width="32" height="32"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="32" id="DuY-11-doj"/>
-                                            <constraint firstAttribute="width" constant="32" id="zTu-Gw-m4V"/>
-                                        </constraints>
-                                        <state key="normal" backgroundImage="calendar"/>
-                                    </button>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="5HN-g3-sHW" secondAttribute="trailing" id="WQ6-t1-afg"/>
-                                </constraints>
-                            </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ujW-YV-vAe">
                                 <rect key="frame" x="32" y="415" width="311" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="q5E-9N-z8b">
+                                <rect key="frame" x="0.0" y="452" width="375" height="216"/>
+                                <date key="date" timeIntervalSinceReferenceDate="559179655.54135895">
+                                    <!--2018-09-20 23:40:55 +0000-->
+                                </date>
+                            </datePicker>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Lpb-XD-SPo" firstAttribute="leading" secondItem="FaI-sP-rs4" secondAttribute="leading" constant="32" id="1VZ-Sm-BhS"/>
                             <constraint firstItem="lhm-zQ-oHx" firstAttribute="leading" secondItem="FaI-sP-rs4" secondAttribute="leading" constant="32" id="7Z7-6O-fEq"/>
-                            <constraint firstItem="uCl-qh-ThA" firstAttribute="leading" secondItem="FaI-sP-rs4" secondAttribute="leading" constant="32" id="9SV-Xu-NDP"/>
                             <constraint firstItem="FaI-sP-rs4" firstAttribute="trailing" secondItem="Lpb-XD-SPo" secondAttribute="trailing" constant="32" id="BQO-P4-Dzy"/>
                             <constraint firstItem="FaI-sP-rs4" firstAttribute="trailing" secondItem="iZT-hf-xf5" secondAttribute="trailing" constant="32" id="Bln-S0-4ea"/>
                             <constraint firstItem="ujW-YV-vAe" firstAttribute="leading" secondItem="FaI-sP-rs4" secondAttribute="leading" constant="32" id="M0k-wy-9ci"/>
+                            <constraint firstItem="q5E-9N-z8b" firstAttribute="leading" secondItem="FaI-sP-rs4" secondAttribute="leading" id="SOx-7k-v4E"/>
                             <constraint firstItem="iZT-hf-xf5" firstAttribute="top" secondItem="b11-h5-2HO" secondAttribute="bottom" constant="16" id="Ssc-Cr-EJD"/>
                             <constraint firstItem="Lpb-XD-SPo" firstAttribute="top" secondItem="iZT-hf-xf5" secondAttribute="bottom" constant="16" id="Vp1-bY-Wcy"/>
                             <constraint firstItem="b11-h5-2HO" firstAttribute="top" secondItem="FaI-sP-rs4" secondAttribute="top" constant="16" id="W6R-q9-8kh"/>
-                            <constraint firstItem="uCl-qh-ThA" firstAttribute="top" secondItem="ujW-YV-vAe" secondAttribute="bottom" constant="16" id="WVw-g2-Kc3"/>
-                            <constraint firstItem="FaI-sP-rs4" firstAttribute="trailing" secondItem="uCl-qh-ThA" secondAttribute="trailing" constant="32" id="bGG-xb-Z3h"/>
+                            <constraint firstItem="q5E-9N-z8b" firstAttribute="trailing" secondItem="FaI-sP-rs4" secondAttribute="trailing" id="X7p-HX-Eyq"/>
                             <constraint firstItem="FaI-sP-rs4" firstAttribute="trailing" secondItem="b11-h5-2HO" secondAttribute="trailing" constant="32" id="cqB-x5-zg6"/>
                             <constraint firstItem="FaI-sP-rs4" firstAttribute="trailing" secondItem="ujW-YV-vAe" secondAttribute="trailing" constant="32" id="eoq-C3-Lqa"/>
+                            <constraint firstItem="q5E-9N-z8b" firstAttribute="top" secondItem="ujW-YV-vAe" secondAttribute="bottom" constant="16" id="h4f-fX-ib2"/>
                             <constraint firstItem="iZT-hf-xf5" firstAttribute="leading" secondItem="FaI-sP-rs4" secondAttribute="leading" constant="32" id="qpr-yZ-sgl"/>
                             <constraint firstItem="b11-h5-2HO" firstAttribute="leading" secondItem="FaI-sP-rs4" secondAttribute="leading" constant="32" id="reX-Rk-yob"/>
                             <constraint firstItem="lhm-zQ-oHx" firstAttribute="top" secondItem="Lpb-XD-SPo" secondAttribute="bottom" constant="16" id="uZM-3p-TSQ"/>
@@ -178,9 +163,22 @@
                         <viewLayoutGuide key="safeArea" id="FaI-sP-rs4"/>
                     </view>
                     <navigationItem key="navigationItem" title="AddEdit Note" id="7gw-bq-FBv">
-                        <barButtonItem key="leftBarButtonItem" style="plain" systemItem="cancel" id="NNM-7q-9MQ"/>
-                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="save" id="loF-N7-8lK"/>
+                        <barButtonItem key="leftBarButtonItem" style="plain" systemItem="cancel" id="NNM-7q-9MQ">
+                            <connections>
+                                <action selector="cancelPressed:" destination="Pth-zJ-XUF" id="c16-QA-VLY"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="save" id="loF-N7-8lK">
+                            <connections>
+                                <action selector="savePressed:" destination="Pth-zJ-XUF" id="Ir2-C7-QtF"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="datePicker" destination="q5E-9N-z8b" id="Vrs-V3-kc2"/>
+                        <outlet property="descField" destination="lhm-zQ-oHx" id="Ut8-F8-Q9z"/>
+                        <outlet property="titleField" destination="iZT-hf-xf5" id="CqK-Tx-q75"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2io-4F-2k4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -228,8 +226,17 @@
                         <viewLayoutGuide key="safeArea" id="KJ5-7N-elK"/>
                     </view>
                     <navigationItem key="navigationItem" title="VIEW" id="7Gz-js-wem">
-                        <barButtonItem key="leftBarButtonItem" title="Back" id="yFI-2W-XzD"/>
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="yFI-2W-XzD">
+                            <connections>
+                                <action selector="backPressed:" destination="tzC-3U-DhT" id="tbF-F3-gHl"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="dateLabel" destination="yLH-Ee-vAC" id="wrx-gT-sad"/>
+                        <outlet property="descLabel" destination="yBv-r3-06K" id="ISZ-2v-iaP"/>
+                        <outlet property="titleLabel" destination="ElB-yd-Ygp" id="Inb-xn-COp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Is-Ca-I4e" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -291,7 +298,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="calendar" width="32" height="32"/>
         <image name="circle_empty" width="32" height="32"/>
     </resources>
 </document>

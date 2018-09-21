@@ -13,6 +13,8 @@ class NoteCell: UITableViewCell {
     @IBOutlet weak var checkedButton: UIButton!
     @IBOutlet weak var noteLabel: UILabel!
     
+    var indexPath: IndexPath?
+    
     @IBAction func checkedPressed(_ sender: UIButton) {
         if checkedButton.backgroundImage(for: .normal) == UIImage(named: "circle_empty") {
             let image = UIImage(named: "circle_full")

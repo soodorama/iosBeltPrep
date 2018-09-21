@@ -10,7 +10,7 @@
 		8E2C5EFB2153632100B7BBF2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2C5EFA2153632100B7BBF2 /* AppDelegate.swift */; };
 		8E2C5EFD2153632100B7BBF2 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2C5EFC2153632100B7BBF2 /* MainVC.swift */; };
 		8E2C5F002153632100B7BBF2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E2C5EFE2153632100B7BBF2 /* Main.storyboard */; };
-		8E2C5F032153632100B7BBF2 /* iosBeltPrep.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8E2C5F012153632100B7BBF2 /* iosBeltPrep.xcdatamodeld */; };
+		8E2C5F032153632100B7BBF2 /* Note.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8E2C5F012153632100B7BBF2 /* Note.xcdatamodeld */; };
 		8E2C5F052153632200B7BBF2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E2C5F042153632200B7BBF2 /* Assets.xcassets */; };
 		8E2C5F082153632200B7BBF2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E2C5F062153632200B7BBF2 /* LaunchScreen.storyboard */; };
 		8E2C5F132153632200B7BBF2 /* iosBeltPrepTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2C5F122153632200B7BBF2 /* iosBeltPrepTests.swift */; };
@@ -114,7 +114,7 @@
 				8E2C5F042153632200B7BBF2 /* Assets.xcassets */,
 				8E2C5F062153632200B7BBF2 /* LaunchScreen.storyboard */,
 				8E2C5F092153632200B7BBF2 /* Info.plist */,
-				8E2C5F012153632100B7BBF2 /* iosBeltPrep.xcdatamodeld */,
+				8E2C5F012153632100B7BBF2 /* Note.xcdatamodeld */,
 			);
 			path = iosBeltPrep;
 			sourceTree = "<group>";
@@ -271,7 +271,7 @@
 				8E2C5EFD2153632100B7BBF2 /* MainVC.swift in Sources */,
 				8E2C5F30215376C900B7BBF2 /* NoteCell.swift in Sources */,
 				8E2C5F2E2153692C00B7BBF2 /* ViewVC.swift in Sources */,
-				8E2C5F032153632100B7BBF2 /* iosBeltPrep.xcdatamodeld in Sources */,
+				8E2C5F032153632100B7BBF2 /* Note.xcdatamodeld in Sources */,
 				8E2C5F2C2153692000B7BBF2 /* AddEditVC.swift in Sources */,
 				8E2C5EFB2153632100B7BBF2 /* AppDelegate.swift in Sources */,
 			);
@@ -602,13 +602,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		8E2C5F012153632100B7BBF2 /* iosBeltPrep.xcdatamodeld */ = {
+		8E2C5F012153632100B7BBF2 /* Note.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
 				8E2C5F022153632100B7BBF2 /* iosBeltPrep.xcdatamodel */,
 			);
 			currentVersion = 8E2C5F022153632100B7BBF2 /* iosBeltPrep.xcdatamodel */;
-			path = iosBeltPrep.xcdatamodeld;
+			path = Note.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
